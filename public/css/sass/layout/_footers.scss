@@ -1,0 +1,137 @@
+/*====================================================================
+	Footer layout-1
+=====================================================================*/
+
+.top-footer-wrapper {
+	background-color: aliceblue;
+    
+	.logo-img {
+		width: 190px;
+	}
+ h5 {
+    position: relative;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+p {
+	font-size: 14px;
+}
+
+
+ul {
+	line-height: 35px;
+	padding: 0;
+}
+
+
+a {
+  color: #1e1e1e;
+  
+}
+
+.footer-social-list {
+	padding: 0;
+	margin-bottom: 0;
+	display: flex;
+}
+
+.footer-social-list .pr-3 {
+	padding-right: 1rem !important;
+}
+
+.footer-social-list li i {
+	color: #1e1e1e;
+	width: 35px;
+	height: 35px;
+	font-size: 23px;
+	text-align: center;
+	line-height: 35px;
+	transition: all 0.3s;
+}
+
+.footer-copyright-text {
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 0.85rem;
+	color: $color-black;
+
+	a {
+		color: $color-primary;
+	}
+}
+
+}
+
+
+.cta-btn.whatsapp {
+	background: #25d366;
+}
+
+.cta-btn.enquiry {
+	background: #0f9b0f;
+}
+
+.whatsapp i {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    background-color: #25d366;
+    /* box-shadow: 2px 2px 3px #999; */
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.callus i {
+	position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    background-color: #063484;
+    /* box-shadow: 2px 2px 3px #999; */
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.scroll-top {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	color: $color-white !important;
+	cursor: pointer;
+}
+.scroll-top:hover {
+	color: $light-bg !important;
+}
+.bottom-footer-wrapper {
+	background-color: #262e76;
+	padding: 1rem 0;
+}
+.dark .bottom-footer-wrapper {
+	background-color: $dark-mode;
+}
+.footer-copyright-text {
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 0.85rem;
+	color: $color-white;
+}
+.creator-link {
+	color: #ffffff;
+    font-weight: 600;
+}
+.creator-link:hover {
+	color: $color-white;
+}

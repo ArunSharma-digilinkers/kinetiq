@@ -1,0 +1,389 @@
+/*====================================================================
+	Home
+=====================================================================*/
+.hm-product-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		font-size: 28px;
+		font-weight: 900;
+	}
+
+	.product-grid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 20px;
+	}
+
+	.product-card {
+		background: #fff;
+		border-radius: 18px;
+		padding: 5px;
+		text-align: center;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+		transition: .35s ease;
+		height: 100%;
+
+		&:hover {
+			transform: translateY(-6px);
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			border-radius: 14px;
+			margin-bottom: 12px;
+			padding: 40px;
+		}
+
+		h4 {
+			font-size: 16px;
+			font-weight: 400;
+			color: #000000;
+			margin-top: -35px;
+		}
+	}
+}
+
+.hm-wrapper {
+
+	h3 {
+		font-size: 28px;
+		font-weight: 900;
+	}
+
+	.default-btn {
+		display: inline-block;
+		padding: 12px 24px;
+		background: linear-gradient(135deg, #04113e, #0a2a7a);
+		color: #fff;
+		text-decoration: none;
+		border-radius: 38px;
+		font-size: 16px;
+		font-weight: 500;
+		transition: 0.3s ease;
+
+		&:hover {
+			background-color: $color-primary;
+		}
+	}
+}
+
+.home-cta-wrapper {
+	background: linear-gradient(135deg, #04113e, #0a2a7a);
+	padding: 90px 0;
+	color: #fff;
+}
+
+.cta-title {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.cta-text {
+	font-size: 16px;
+	opacity: 0.8;
+	margin: 0;
+	color: $color-white;
+}
+
+.cta-btn {
+	display: inline-block;
+	background: #28a745;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 50px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+	background: #218838;
+	color: #fff;
+}
+
+.why-choose-kinetiq-wrapper {
+
+	h1 {
+		font-size: 28px;
+		text-align: center;
+		font-weight: 900;
+	}
+
+	p {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+.feature-card {
+    margin-top: 20px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Icon */
+.feature-card .icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 15px;
+    // background: linear-gradient(135deg, #04113e, #283077);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* Title */
+.feature-card h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #04113e;
+    font-size: 18px;
+}
+
+}
+
+.testimonial-wrapper {
+
+	h4 {
+		font-size: 28px;
+		font-weight: 900;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.owl-nav {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.testimonial-card {
+        padding: 35px;
+        border-radius: 18px;
+        position: relative;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        margin-bottom: 24px;
+
+		p {
+			line-height: 1.7;
+		}
+
+		&::before {
+			content: "“";
+			font-size: 70px;
+			color: rgb(4 17 62 / 20%);
+			position: absolute;
+			top: -20px;
+			left: 20px;
+			font-family: serif;
+		}
+	}
+
+	.testimonial-user {
+		display: flex;
+		align-items: center;
+		margin-top: 25px;
+
+		img {
+			width: 55px !important;
+			height: 55px;
+			border-radius: 50%;
+			margin-right: 15px;
+			object-fit: cover;
+		}
+
+		h5 {
+			margin: 0;
+			font-size: 16px;
+			color: rgb(0 0 0 / 65%);
+		}
+
+		span {
+			font-size: 13px;
+			color: #777;
+		}
+	}
+}
+
+/*====================================================================
+	About Us
+=====================================================================*/
+.about-banner {
+	background-image: url('../img/about-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 10rem 0;
+	background-blend-mode: hard-light;
+	background-color: #283177;
+
+	h2 {
+		color: $color-white;
+		font-size: 40px;
+		font-weight: 600;
+	}
+}
+
+.about-info-wrapper {
+	h3 {
+		font-size: 28px;
+		font-weight: 900;
+	}
+}
+
+.about-cards {
+	background: #f8f9fa;
+
+	h1 {
+		font-size: 28px;
+		font-weight: 900;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+}
+
+.about-card {
+	background: #fff;
+	padding: 25px;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+	transition: 0.3s ease;  
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+	&:hover {
+		transform: translateY(-8px);
+	}
+
+	.icon {
+		width: 80px;
+		margin-bottom: 15px;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 10px;
+        color: #04113e;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+.process-section {
+    background: #fff;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+
+.process-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    height: 100%;
+    position: relative;
+    color: #04113e;
+}
+
+.process-card:hover {
+    transform: translateY(-8px);
+}
+
+.step-number {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #283077;
+}
+
+.process-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #04113e;
+}
+
+/*====================================================================
+	Products
+=====================================================================*/
+
+
+/*====================================================================
+	Gallery
+=====================================================================*/
+
+
+/*====================================================================
+	Contact Us
+=====================================================================*/
+
+
+@media (max-width: 768px) {
+
+	.product-main-image {
+		height: 350px;
+	}
+
+	.product-grid {
+		grid-template-columns: repeat(2, 1fr)!important;
+	}
+
+	.about-banner {
+    background-image: url(../img/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 0;
+    background-blend-mode: hard-light;
+    background-color: #283177;
+}
+.about-banner h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+}
+#digiCarousel .carousel-caption h5 {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#digiCarousel .carousel-caption p {
+    color: #ffffff;
+    padding-right: 0;
+    font-size: 8px;
+}
+}
+

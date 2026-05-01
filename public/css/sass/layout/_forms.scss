@@ -1,0 +1,50 @@
+
+.contact-form {
+    width: 100%;
+
+    &__label {
+        padding-left: 1rem;
+        font-size: .9rem;
+    }
+
+    &__input {
+        background-color: #f8f8f8;
+
+        &:focus {
+            border-color: $color-success;
+            box-shadow: none;
+            border-bottom: 3px solid $color-success;
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+
+        &::placeholder {
+            color: $color-text;
+            font-size: .9rem;
+        }
+    }
+
+    &__textarea {
+        background-color: #f8f8f8;
+
+        &:focus {
+            border-color: $color-success;
+            box-shadow: none;
+            border-bottom: 3px solid $color-success;
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 2rem;
+    }
+}
+
+.form-control {
+        padding: 1rem .75rem;
+}

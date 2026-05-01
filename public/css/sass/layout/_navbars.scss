@@ -1,0 +1,131 @@
+/*====================================================================
+	Navbar style 1
+=====================================================================*/
+.navbar {
+	background-color: transparent;
+	
+	.logo-img {
+		width: 175px;
+		display: block;
+	}
+	.logo-img.dark-mode {
+		display: none;
+	}
+	.nav-item {
+		padding-left: 1rem;
+	}
+	.nav-link {
+		color: $color-black;
+		line-height: 50px;
+		text-transform: capitalize;
+		letter-spacing: 1.2px;
+        font-weight: 500;
+	}
+}
+
+.customNav {
+	animation: navSlide 1s ease forwards;
+	background-color: $color-white;
+	-webkit-box-shadow: 0 2px 6px -1px rgba($color-black, .2);
+	box-shadow: 0 2px 6px -1px rgba($color-black, .2);
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+@keyframes navSlide {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+.navbar {
+
+    .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px);
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-item {
+        padding: 10px 15px;
+        transition: 0.3s;
+    }
+
+    .dropdown-item:hover {
+        background: #28a745;
+        color: #fff;
+    }
+
+    /* SHOW DROPDOWN ON HOVER (DESKTOP) */
+    .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar .dropdown-menu {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        display: none;
+    }
+
+    .navbar .dropdown-menu.show {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        line-height: normal !important;
+        padding: 12px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-link {
+           border-bottom: solid 1px #efefef;
+    }
+
+    .dropdown-item {
+    border-bottom: solid 1px #efefef;
+}
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+}
